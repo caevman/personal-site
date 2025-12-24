@@ -2,11 +2,17 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <div className="mx-auto max-w-3xl px-4 py-16 accent-comp">
-        <h1 className="text-3xl font-bold">Cavan Gary</h1>
-        <p className="mt-4 text-lg">
-          Fresh Next.js + Tailwind app. Custom design coming soon.
-        </p>
+      <div className="hero-container">
+        <div className="hero-container__description">
+        {/* <h1 className="font-bold">Cavan Gary</h1> */}
+        <div className='font-satoshi font-bold hero-container__name'>
+          Cavan Gary
+        </div>
+
+        </div>
+        <div className="personal-image-container">
+          <img src='/headshot_gpt.png'/>
+        </div>
       </div>
     </main>
   );

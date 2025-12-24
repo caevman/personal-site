@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import { satoshi } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Patrick Gary",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={satoshi.variable}>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,75 @@
+.change-log {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.change-log__intro {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.change-log__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.change-log__entry {
+  padding: 1.5rem;
+  border-radius: 14px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 213, 194, 0.1),
+      rgba(255, 213, 194, 0.02)
+    ),
+    rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.change-log__entry-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.change-log__summary {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.change-log__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.change-log__group {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.change-log__group h3 {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.change-log__group ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.change-log__group li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
